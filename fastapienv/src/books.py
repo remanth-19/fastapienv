@@ -43,7 +43,7 @@ async def read_books_by_author_category(author: str , category: str):
 
 # POST request example
 @app.post("/books/create_book")
-async def create_book(new_book = Body()):
+async def create_book(new_book=Body()):
     BOOKS.append(new_book)
 
 # PUT req example
